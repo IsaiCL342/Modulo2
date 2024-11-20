@@ -1,16 +1,27 @@
-*Selector universal*/
+/*Selector universal*/
 *{
     padding: 0; 
     margin: 0;
 }
+
 /*Selector de tipo: Etiqueta*/
 body{
-    background-color: chocolate;
+    background-color: rgb(52, 0, 57);
 }
+
+main{
+    /*Ajustar las tarjetas a varias lineas*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
 h1{
     color:white;
 }
+
 /*Selector de tipo: Clase*/
+/*Reutilizar estilos*/
+
 .tarjeta {
     width: 320px;
     background-color: antiquewhite;
@@ -21,16 +32,30 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 8px; /*SeparaciÃ³n*/
 }
+
 .tarjeta .caja-contenedora{
     width: 200px;
-    
 }
+
 .tarjeta img{
     width: 100%;
     object-fit: cover;
     border-radius: 5%;
 }
+
 .tarjeta p{
-    font-size: 20px;
+    font-size: 15px;
+}
+
+/*Selector de tipo: ID*/
+/*Es UNICO*/
+
+#gato{
+    color:blueviolet;
+}
+
+#perro{
+    color:blue;
 }
