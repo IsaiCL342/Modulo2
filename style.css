@@ -2,29 +2,38 @@
 *{
     padding: 0; 
     margin: 0;
+    box-sizing: border-box;
 }
+
+/*CSS que me dio Google Fonts*/
+/*.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}*/
+
+
 
 /*Selector de tipo: Etiqueta*/
 body{
-    background-color: rgb(52, 0, 57);
+    background: linear-gradient(to right, #3d0057, #61028a, #8501bd, #61028a, #3d0057);
+    font-family: "Dancing Script";
+    font-weight: 300;
+    font-style: normal;
 }
-
 main{
     /*Ajustar las tarjetas a varias lineas*/
     display: flex;
     flex-wrap: wrap;
 }
-
 h1{
     color:white;
 }
-
 /*Selector de tipo: Clase*/
 /*Reutilizar estilos*/
-
 .tarjeta {
     width: 320px;
-    background-color: antiquewhite;
+    background-color: rgb(239, 215, 250);
     border-radius: 3%;
     /*Centrando elementos*/
     text-align: center;
@@ -32,30 +41,38 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 8px; /*SeparaciÃ³n*/
+    margin:10px;
+    padding: 12px;
+    border: 3px solid black;
+    transition: all 0.4s ease-in-out; /*Transicion suave*/
 }
 
+.titulo-tarjeta{
+    margin-bottom: 10px;
+}
+/*Pseudoclase Hover para crear animaciones*/
+.tarjeta:hover{
+    background-color: rgb(207, 123, 249);
+    transform: scale(1.05);
+    transform: rotate(3deg);
+}
 .tarjeta .caja-contenedora{
     width: 200px;
 }
-
 .tarjeta img{
-    width: 100%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 5%;
 }
-
 .tarjeta p{
     font-size: 15px;
 }
-
 /*Selector de tipo: ID*/
 /*Es UNICO*/
-
 #gato{
     color:blueviolet;
 }
-
 #perro{
     color:blue;
 }
